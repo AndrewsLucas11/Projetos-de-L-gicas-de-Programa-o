@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        alert("Você entrou")
+var senha = prompt('digite sua senha')
+if(senha == 123){
+    alert('Está logado')
+    var senhaModificada = prompt("Digite a sua nova senha")
+    if(senhaModificada){
+        alert("Senha Modificada com Sucesso")
+    }
+    else{
+        alert('Modifique sua senha, ou será banido')
+        if(!senhaModificada){
+            senhaModificada = prompt("Digite a sua nova senha")
+            if(senhaModificada){
+                alert("Demorou mais concluiu sua nova senha")
+            }
+            else{
+                alert("Não poderá mais acessar")
+            }
+        }
+
+    }
+
+}else{
+    alert('Não foi possivel acessar')
+}
+
+    </script>
+</body>
+</html>
